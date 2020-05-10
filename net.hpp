@@ -7,7 +7,7 @@
 #include <vector>
 
 
-// Since this is simple sample code, network only wait a few time and return uniform policy and zero value.
+// Since this is simple sample code, network only waits a little time and returns random policy and value.
 
 struct Net
 {

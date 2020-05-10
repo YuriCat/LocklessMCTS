@@ -1,6 +1,6 @@
 CXX      = c++
 CXXFLAGS = -std=c++11 -MMD -MP
-OPT      = -O3 -march=native -DNDEBUG 
+OPT      = -O3 -march=native -DNDEBUG
 #OPT     := -O0 -g -ggdb -D_GLIBCXX_DEBUG
 LDFLAGS  = -pthread
 LIBS     =
@@ -21,7 +21,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@if [ ! -d $(OBJ_DIR) ]; \
 		then echo "mkdir -p $(OBJ_DIR)"; mkdir -p $(OBJ_DIR); \
 		fi
-	$(CXX) $(CXXFLAGS) $(OPT) $(INCLUDES) -o $@ -c $< 
+	$(CXX) $(CXXFLAGS) $(OPT) $(INCLUDES) -o $@ -c $<
 
 clean:
 	$(RM) -r $(OBJ_DIR) $(TARGET)
