@@ -1,2 +1,4 @@
 # LocklessMCTS
-multi-thread MCTS without locking each node
+
+This is sample code of multi-thread Monte Carlo Tree Search.
+
