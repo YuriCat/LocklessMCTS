@@ -89,7 +89,7 @@ struct edge_t
 {
     short a;
     Atomic<short> vl = 0;
-    Atomic<float> p = -FLT_MAX;
+    float p = -FLT_MAX;
     Atomic<node_t*> next = nullptr;
 
     ~edge_t()
